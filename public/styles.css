@@ -72,8 +72,24 @@ button span {
   border: 2px solid hsl(198, 1%, 29%);
 }
 
+
+.todoItem {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  overflow:hidden;
+}
+
 li {
   text-align: left;
-  position: relative;
-  padding: 0.5rem;
+  float: left;
 }
+
+.todoItem button {
+  font-size: medium;
+  float: right;
+  background-color: #fdcb6e;
+  border: 2px solid hsl(198, 1%, 29%);
+}
+
+
