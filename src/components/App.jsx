@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+
+import ToDoItem from './ToDoItem';
 
 function App() {
   const [inputText, setInputText] = useState("");
-  const [items, setItems] = useState(["Buy Milk"]);
+  const [items, setItems] = useState([]);
 
   function handleChange(event) {
     const newValue = event.target.value;
@@ -30,7 +32,7 @@ function App() {
       <div>
         <ul>
           {items.map((item) => (
-            <li>{item}</li>
+            <ToDoItem toDoItem={item}/>
           ))}
         </ul>
       </div>
